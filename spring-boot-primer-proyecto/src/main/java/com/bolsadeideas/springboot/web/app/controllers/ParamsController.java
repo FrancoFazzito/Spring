@@ -34,8 +34,8 @@ public class ParamsController {
 	@GetMapping("/mix-params-request")
 	public String param(HttpServletRequest request,Model model) {
 		
-		
-		String texto = request.getParameter("saludo");
+		//http://localhost:8080/params/mix-params-request?texto=hola%20juan&numero=7
+		String texto = request.getParameter("texto");
 		Integer numero = Integer.parseInt(request.getParameter("numero"));
 		
 		String mensaje = String.format("el texto enviado es: %s y su numero es: %d", texto,numero);
