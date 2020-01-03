@@ -1,0 +1,20 @@
+package com.bolsadeideas.springboot.web.app.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/variables")
+public class VariablesRutaController {
+	
+	//ruta tiene una ruta variable
+	@GetMapping("/string/{texto}")
+	public String variables(@PathVariable(name = "texto" /*mismo de ruta*/) String textoValue,Model model) {
+		model.addAttribute("resultado","recibir params de la ruta http get");
+		return "variables/ver";
+	}
+	
+}

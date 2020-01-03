@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User</title>
+</head>
+<body>
+ <h1>Listado de usuarios</h1>
+ <div th:if="${listaUsers.size()>0}">
+ 	<ul>
+ 		<li th:each="usuario : ${listaUsers}" th:text="${usuario.nombre}">
+ 	</ul>
+ </div>
+</body>
+</html>

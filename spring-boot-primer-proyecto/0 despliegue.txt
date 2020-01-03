@@ -1,0 +1,136 @@
+PS C:\Users\i7 5820K> cd E:\SPRING\workspace\spring-boot-primer-proyecto
+
+PS E:\SPRING\workspace\spring-boot-primer-proyecto> .\mvnw.cmd package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----< com.bolsadeideas.springboot.app:spring-boot-primer-proyecto >-----
+[INFO] Building spring-boot-primer-proyecto 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ spring-boot-primer-proyecto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ spring-boot-primer-proyecto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ spring-boot-primer-proyecto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-primer-proyecto\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ spring-boot-primer-proyecto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ spring-boot-primer-proyecto ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests
+20:32:16.632 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:32:16.643 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframe
+work.test.context.CacheAwareContextLoaderDelegate)]
+20:32:16.665 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests] from class [org.sprin
+gframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:32:16.676 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProy
+ectoApplicationTests], using SpringBootContextLoader
+20:32:16.679 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests]: cl
+ass path resource [com/bolsadeideas/springboot/web/app/SpringBootPrimerProyectoApplicationTests-context.xml] does not exist
+20:32:16.680 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests]: cl
+ass path resource [com/bolsadeideas/springboot/web/app/SpringBootPrimerProyectoApplicationTestsContext.groovy] does not exist
+20:32:16.680 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests]: 
+no resource found for suffixes {-context.xml, Context.groovy}.
+20:32:16.680 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApp
+licationTests]: SpringBootPrimerProyectoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:32:16.706 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.bolsadei
+deas.springboot.web.app.SpringBootPrimerProyectoApplicationTests]
+20:32:16.751 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\SPRING\workspace\spring-boot-primer-proyecto\target\classes\com\bolsade
+ideas\springboot\web\app\SpringBootPrimerProyectoApplication.class]
+20:32:16.754 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplication for test class com.bolsadei
+deas.springboot.web.app.SpringBootPrimerProyectoApplicationTests
+20:32:16.824 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests]: 
+using defaults.
+20:32:16.824 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mo
+ckito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.aut
+oconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servle
+t.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.suppor
+t.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.c
+ontext.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+20:32:16.833 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to
+ a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+20:32:16.834 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing
+ dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:32:16.834 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5aac4250, org.springframework.tes
+t.context.support.DirtiesContextBeforeModesTestExecutionListener@1338fb5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42463763, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjection
+TestExecutionListener@59f63e24, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61f05988, org.springframework.test.context.event.EventPublishingTestExecutionListener@7ca33c24, org.springframework.boot
+.test.mock.mockito.ResetMocksTestExecutionListener@fade1fc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@67c2e933, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServer
+ResetTestExecutionListener@41dd05a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@613a8ee1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionLi
+stener@178213b]
+20:32:16.837 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@48d5f34e testClass = SpringBootPrimerProyectoApplicationTests, testIn
+stance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@fc258b1 testClass = SpringBootPrimerProyectoApplicationTests, locations = '{}', classes = '{class com.bolsa
+deideas.springboot.web.app.SpringBootPrimerProyectoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringB
+ootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7975d1d8, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$Dupl
+icateJsonObjectContextCustomizer@5167f57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@41488b16, org.springframework.boot.test.
+autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3576ddc2], resourceBasePath = 'src/main/webapp', contextLoader = 'o
+rg.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContex
+t [false] with mode [null].
+20:32:16.860 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstra
+pper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.2.3.BUILD-SNAPSHOT)
+
+2020-01-02 20:32:17.083  INFO 4324 --- [           main] SpringBootPrimerProyectoApplicationTests : Starting SpringBootPrimerProyectoApplicationTests on DESKTOP-3QCNH4G with PID 4324 (started by i7 5820K in E:\SPRING\workspace\sp
+ring-boot-primer-proyecto)
+2020-01-02 20:32:17.084  INFO 4324 --- [           main] SpringBootPrimerProyectoApplicationTests : No active profile set, falling back to default profiles: default
+2020-01-02 20:32:17.979  INFO 4324 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-02 20:32:18.055  INFO 4324 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-02 20:32:18.204  INFO 4324 --- [           main] SpringBootPrimerProyectoApplicationTests : Started SpringBootPrimerProyectoApplicationTests in 1.337 seconds (JVM running for 2.042)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.868 s - in com.bolsadeideas.springboot.web.app.SpringBootPrimerProyectoApplicationTests
+2020-01-02 20:32:18.478  INFO 4324 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ spring-boot-primer-proyecto ---
+[INFO] Building jar: E:\SPRING\workspace\spring-boot-primer-proyecto\target\spring-boot-primer-proyecto-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.3.BUILD-SNAPSHOT:repackage (repackage) @ spring-boot-primer-proyecto ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.631 s
+[INFO] Finished at: 2020-01-02T20:32:19-03:00
+[INFO] ------------------------------------------------------------------------
+
+PS E:\SPRING\workspace\spring-boot-primer-proyecto> java -jar .\target\spring-boot-primer-proyecto-0.0.1-SNAPSHOT.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v2.2.3.BUILD-SNAPSHOT)
+
+2020-01-02 20:33:34.881  INFO 10588 --- [           main] .w.a.SpringBootPrimerProyectoApplication : Starting SpringBootPrimerProyectoApplication v0.0.1-SNAPSHOT on DESKTOP-3QCNH4G with PID 10588 (E:\SPRING\workspace\spring-boot-
+primer-proyecto\target\spring-boot-primer-proyecto-0.0.1-SNAPSHOT.jar started by i7 5820K in E:\SPRING\workspace\spring-boot-primer-proyecto)
+2020-01-02 20:33:34.884  INFO 10588 --- [           main] .w.a.SpringBootPrimerProyectoApplication : No active profile set, falling back to default profiles: default
+2020-01-02 20:33:35.920  INFO 10588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-02 20:33:35.928  INFO 10588 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-02 20:33:35.929  INFO 10588 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-02 20:33:35.975  INFO 10588 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-02 20:33:35.975  INFO 10588 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1044 ms
+2020-01-02 20:33:36.112  INFO 10588 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-02 20:33:36.172  INFO 10588 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-02 20:33:36.262  INFO 10588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-02 20:33:36.265  INFO 10588 --- [           main] .w.a.SpringBootPrimerProyectoApplication : Started SpringBootPrimerProyectoApplication in 1.7 seconds (JVM running for 2.041)
