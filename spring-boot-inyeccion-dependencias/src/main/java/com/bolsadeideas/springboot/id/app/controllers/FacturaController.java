@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bolsadeideas.springboot.id.app.models.domain.Factura;
+import com.bolsadeideas.springboot.id.app.models.domain.ItemFactura;
 
 @Controller
 @RequestMapping("/factura")
@@ -19,6 +20,9 @@ public class FacturaController {
 	public String ver(Model model) {
 		model.addAttribute("titulo","factura con inyeccion de dependencia");
 		model.addAttribute("factura",factura);
+		for(ItemFactura item : factura.getFacturas()) {
+			System.out.println(item.getProducto().getDescripcion());
+		}
 		return "facturas/ver";
 	}
 }

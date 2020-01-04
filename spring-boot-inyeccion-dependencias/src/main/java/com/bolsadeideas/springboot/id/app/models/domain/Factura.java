@@ -14,7 +14,7 @@ import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.context.annotation.SessionScope;
 
 @Component
-//@RequestScope //trabaja durante la peticion
+@RequestScope //trabaja durante la peticion
 //@SessionScope //trabaja durante la sesion y se tiene que implementar serializable se usa para carros de compra y no se aplica el destructor
 public class Factura implements Serializable{ // tenemos que inyectar cliente y una lista de items
  

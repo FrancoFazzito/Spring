@@ -6,7 +6,7 @@ import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.context.annotation.SessionScope;
 
 @Component
-//@RequestScope
+@RequestScope
 public class Cliente {
 
 	@Value("${cliente.nombre}")
