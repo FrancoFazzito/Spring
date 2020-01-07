@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.datajpa.app.models.dao;
+package com.bolsadeideas.springboot.datajpa.app.models.dao.old;
 
 import java.util.List;
 

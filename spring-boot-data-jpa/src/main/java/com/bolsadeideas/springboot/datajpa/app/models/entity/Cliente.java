@@ -16,8 +16,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-import com.sun.istack.NotNull;
-import com.sun.istack.Nullable;
+
 
 @Entity
 @Table(name = "clientes")
@@ -42,7 +41,6 @@ public class Cliente implements Serializable {
 	@Email
 	private String email;
 
-	@NotNull
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE) // indica el formato de fecha
 	private Date createAt;

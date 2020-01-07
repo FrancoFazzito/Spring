@@ -1,2 +1,16 @@
 INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (1,'andres','guzman','argentina@gmail.com','2017-08-28');
-INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (2,'john','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (2,'aaaaaaaa','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (3,'erererer','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (4,'aaaaaaaaaaa','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (5,'jee','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (6,'jkjf','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (7,'iypsdf','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (8,'fasfafa','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (9,'dasdadada','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (10,'adadadada','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (11,'jadadadada','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (12,'johddddddn','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (14,'johdddddddn','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (15,'jddddddohn','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (16,'jossshn','perez','colombia@gmail.com','2019-08-28');
+INSERT INTO clientes (id,nombre,apellido,email,create_at) VALUES (17,'johsssn','perez','colombia@gmail.com','2019-08-28');
