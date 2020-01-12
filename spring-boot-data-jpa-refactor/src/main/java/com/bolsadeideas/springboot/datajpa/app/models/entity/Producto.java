@@ -52,6 +52,10 @@ public class Producto implements Serializable {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+	public Long getId() {
+		return id;
+	}
 
 	@PrePersist
 	public void prePersist() {

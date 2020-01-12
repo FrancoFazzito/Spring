@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -107,4 +108,5 @@ public class Factura implements Serializable {
 	public void prePersist() {
 		createAt = new Date();
 	}
+	
 }

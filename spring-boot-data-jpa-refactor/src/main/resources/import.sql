@@ -23,6 +23,10 @@ INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('John', '
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Joe', 'Bloggs', 'joe.bloggs@gmail.com', '2017-08-23', '');
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('John', 'Stiles', 'john.stiles@gmail.com', '2017-08-24', '');
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Richard', 'Roe', 'stiles.roe@gmail.com', '2017-08-25', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Richard', 'Roe', 'stiles.roe@gmail.com', '2017-08-25', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('john', 'Roe', 'stiles.roe@gmail.com', '2017-08-25', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('ricardo', 'Roe', 'stiles.roe@gmail.com', '2017-08-25', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Richard', 'Roe', 'stiles.roe@gmail.com', '2017-08-25', '');
 
 /* Populate tabla productos */
 INSERT INTO productos (nombre, precio, create_at) VALUES('Panasonic Pantalla LCD', 259990, NOW());
@@ -32,6 +36,8 @@ INSERT INTO productos (nombre, precio, create_at) VALUES('Sony Notebook Z110', 3
 INSERT INTO productos (nombre, precio, create_at) VALUES('Hewlett Packard Multifuncional F2280', 69990, NOW());
 INSERT INTO productos (nombre, precio, create_at) VALUES('Bianchi Bicicleta Aro 26', 69990, NOW());
 INSERT INTO productos (nombre, precio, create_at) VALUES('Mica Comoda 5 Cajones', 299990, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Mica Comoda 4 Cajones', 295000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Mica Comoda 3 Cajones', 290000, NOW());
 
 /* Creamos algunas facturas */
 INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('Factura equipos de oficina', null, 1, NOW());
