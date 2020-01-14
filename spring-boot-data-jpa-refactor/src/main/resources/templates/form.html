@@ -6,72 +6,83 @@
 	<header th:replace="layout/layout :: header"></header>
 
 	<div class="container py-4">
-
-		<div class="card bg-dark text-white">
+		<div class="card bg-light">
 			<div class="card-header" th:text="${titulo}"></div>
 			<div class="card-body">
+				<h4 class="card-title">
+					<a class="btn btn-light"
+						th:href="@{'/ver/' + ${factura.cliente.id}}"
+						th:text="'&laquo; volver'"></a>
+				</h4>
 
-				<div th:object="${cliente}" th:remove="tag">
-					<ul th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
-						<li th:each="err: ${#fields.errors('*')}" th:text="${err}"></li>
-					</ul>
-				</div>
-				<form th:action="@{/form}" th:object="${cliente}" method="post"
-					enctype="multipart/form-data">
+				<form th:action="@{/factura/form/}" th:object="${factura}"
+					method="post">
+
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Nombre</label>
+						<label for="cliente" class="col-sm-2 col-form-label"
+							th:text="'Cliente'"></label>
 						<div class="col-sm-6">
-							<input type="text" th:field="*{nombre}" class="form-control"
-								th:errorclass="'form-control alert-danger'" /> <small
-								class="form-text text-danger"
-								th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small>
+							<input name="cliente"
+								th:value="${factura.cliente.nombre} + ' ' + ${factura.cliente.apellido}"
+								class="form-control" disabled='disabled' />
 						</div>
 					</div>
+
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Apellido</label>
+						<label for="descripcion" class="col-sm-2 col-form-label"
+							th:text="'Descripción'"></label>
 						<div class="col-sm-6">
-							<input type="text" th:field="*{apellido}" class="form-control"
-								th:errorclass="'form-control alert-danger'" /> <small
-								class="form-text text-danger"
-								th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></small>
+							<input type="text" th:field="*{descripcion}" class="form-control" />
 						</div>
 					</div>
+
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Email</label>
+						<label for="observacion" class="col-sm-2 col-form-label"
+							th:text="'Observación'"></label>
 						<div class="col-sm-6">
-							<input type="text" th:field="*{email}" class="form-control"
-								th:errorclass="'form-control alert-danger'" /> <small
-								class="form-text text-danger"
-								th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+							<textarea th:field="*{observacion}" class="form-control"></textarea>
 						</div>
 					</div>
+
 					<div class="form-group row">
-						<label class="col-sm-2 col-form-label">Fecha</label>
+						<label for="buscar_producto" class="col-sm-2 col-form-label"
+							th:text="'Buscar producto'"></label>
 						<div class="col-sm-6">
-							<input type="text" class="form-control" th:field="*{createAt}"
-								th:errorclass="'form-control alert-danger'" /> <small
-								class="form-text text-danger"
-								th:if="${#fields.hasErrors('createAt')}" th:errors="*{createAt}"></small>
+							<input type="text" name="buscar_producto" id="buscar_producto"
+								class="form-control" />
 						</div>
 					</div>
+
+					<table th:replace="factura/plantilla-items :: itemsFactura"></table>
+
+					<table id="cargarItemProductos"
+						class="table table-sm table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Precio</th>
+								<th>Cantidad</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+
 					<div class="form-group row">
-						<label for="file" class="col-sm-2 col-form-label">Foto</label>
 						<div class="col-sm-6">
-							<input type="file" name="file" class="form-control" />
-						</div>
-					</div>
-					<div class="form-group row">
-						<div class="col-sm-6">
-							<input type="submit" value="Crear Cliente"
+							<input type="submit" th:value="${titulo}"
 								class="btn btn-secondary" />
 						</div>
 					</div>
-
 				</form>
+
+
 			</div>
 		</div>
 	</div>
 
 	<footer th:replace="layout/layout :: footer"></footer>
+	<script th:replace="factura/js/autocomplete-productos :: javascript"></script>
+
 </body>
 </html>

@@ -4,20 +4,12 @@
 <body>
 
 	<header th:replace="layout/layout :: header"></header>
-
 	<div class="container py-4">
-
 		<div class="card bg-dark text-white">
 			<div class="card-header" th:text="${titulo}"></div>
 			<div class="card-body">
-				<h4 class="card-title">
-					<a class="btn btn-btn btn-secondary btn xs"
-						th:href="@{/ver/} + ${factura.cliente.id}"
-						th:text="'&laquo; volver'"></a>
-				</h4>
 				<form th:action="@{/factura/form/}" th:object="${factura}"
 					method="post">
-
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label" th:text="'nombre cliente'"></label>
 						<div class="col-sm-6">
@@ -26,7 +18,6 @@
 								class="form-control" disabled="disabled" />
 						</div>
 					</div>
-
 					<div class="form-group row">
 						<label class="col-sm-2 col-form-label" th:text="'observacion'"></label>
 						<div class="col-sm-6">
@@ -39,22 +30,16 @@
 							<input type="text" th:field="*{descripcion}" class="form-control">
 						</div>
 					</div>
-					<!--  <div class="form-group row">
-						<label for="buscar_producto" class="col-sm-2 col-form-label"
-							th:text="'producto'"></label>
+					<div class="form-group row">
+						<label for="buscar_producto" class="col-sm-2 col-form-label" th:text="'producto'"></label>
 						<div class="col-sm-6">
-							<input type="text" name="buscar_producto" id="buscar_producto"
-								class="form-control" />
+							<input type="text" name="buscar_producto" id="buscar_producto" class="form-control">
 						</div>
-					</div>-->
-					<ol th:each="producto: ${productos}">
-						<li th:text="${producto.id} + ' ' +${producto.nombre}"></li>
-					</ol>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-
 	<footer th:replace="layout/layout :: footer"></footer>
 	<footer th:replace="factura/js/autocomplete-productos :: javascript"></footer>
 </body>
