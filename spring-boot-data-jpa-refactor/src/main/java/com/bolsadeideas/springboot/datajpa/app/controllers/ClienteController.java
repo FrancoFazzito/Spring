@@ -3,7 +3,7 @@ package com.bolsadeideas.springboot.datajpa.app.controllers;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -37,14 +45,26 @@ public class ClienteController {
 
 	@Autowired
 	private IUploadFileService uploadFileService;
-	
+
 	@Autowired
 	@Qualifier("clienteService")
 	private IclienteService clienteService;
 
 	@GetMapping({ "/listar", "/", "" })
-	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
+	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model model,
+			Authentication authentication, HttpServletRequest request) {
 
+		if (authentication != null) {
+			authentication.getName();
+			Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+			auth.getName();
+		}
+
+		SecurityContextHolderAwareRequestWrapper securityContext = new SecurityContextHolderAwareRequestWrapper(request,
+				"");
+		if (securityContext.isUserInRole("ROLE_ADMIN")) {
+
+		}
 		Pageable pageRequest = PageRequest.of(page, 5);
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 		PageRender<Cliente> pageRender = new PageRender<>("/listar", clientes);
@@ -54,8 +74,9 @@ public class ClienteController {
 		return "listar";
 	}
 
-	@GetMapping(value="/uploads/{filename:.+}")
-	public ResponseEntity<Resource> verFoto(@PathVariable String filename){
+	@Secured("ROLE_USER")
+	@GetMapping(value = "/uploads/{filename:.+}")
+	public ResponseEntity<Resource> verFoto(@PathVariable String filename) {
 
 		Resource recurso = null;
 		try {
@@ -63,9 +84,11 @@ public class ClienteController {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-		return ResponseEntity.ok().header(org.springframework.http.HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + recurso.getFilename() + "\"").body(recurso);
+		return ResponseEntity.ok().header(org.springframework.http.HttpHeaders.CONTENT_DISPOSITION,
+				"attachment; filename=\"" + recurso.getFilename() + "\"").body(recurso);
 	}
-	
+
+	@Secured("ROLE_USER")
 	@GetMapping(value = "/ver/{id}")
 	public String ver(@PathVariable(value = "id") Long id, Model model, RedirectAttributes flash) {
 
@@ -80,6 +103,7 @@ public class ClienteController {
 		return "ver";
 	}
 
+	@Secured({"ROLE_ADMIN","ROLE_USER"})
 	@GetMapping("/form")
 	public String crear(Model model) {
 		Cliente cliente = new Cliente();
@@ -102,16 +126,19 @@ public class ClienteController {
 		return "form";
 	}
 
+	@Secured("ROLE_ADMIN")
 	@PostMapping("/form")
-	public String guardar(@Valid @ModelAttribute("cliente") Cliente cliente, BindingResult result,Model model,@RequestParam("file") MultipartFile file ,RedirectAttributes flash, SessionStatus status) {
-		if(result.hasErrors()) {
-			model.addAttribute("titulo","formulario de Cliente");
+	public String guardar(@Valid @ModelAttribute("cliente") Cliente cliente, BindingResult result, Model model,
+			@RequestParam("file") MultipartFile file, RedirectAttributes flash, SessionStatus status) {
+		if (result.hasErrors()) {
+			model.addAttribute("titulo", "formulario de Cliente");
 			return "form";
 		}
 
 		if (!file.isEmpty()) {
 
-			if (cliente.getId() != null && cliente.getId() > 0 && cliente.getFoto() != null && cliente.getFoto().length() > 0) {
+			if (cliente.getId() != null && cliente.getId() > 0 && cliente.getFoto() != null
+					&& cliente.getFoto().length() > 0) {
 				uploadFileService.delete(cliente.getFoto());
 			}
 
@@ -121,17 +148,19 @@ public class ClienteController {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			
+
 			flash.addFlashAttribute("info", "Has subido correctamente '" + uniqueFilename + "'");
 			cliente.setFoto(uniqueFilename);
 		}
-			
+
 		clienteService.Save(cliente);
 		status.setComplete();
-		flash.addFlashAttribute("success","cliente creado con exito");
+		flash.addFlashAttribute("success", "cliente creado con exito");
 		return "redirect:/listar";
 	}
 
+	//@PreAuthorize("hasRole('ROLE_ADMIN')")
+	@Secured("ROLE_ADMIN")
 	@GetMapping("/eliminar/{id}")
 	public String eliminar(@PathVariable(value = "id") Long id, Model model, RedirectAttributes flash) {
 		if (id > 0) {
@@ -148,5 +177,23 @@ public class ClienteController {
 		return "redirect:/listar";
 	}
 
+	// obtener roles
+	private boolean hasRole(String role) {
+		SecurityContext context = SecurityContextHolder.getContext();
+
+		if (context == null) {
+			return false;
+		}
+
+		Authentication authentication = context.getAuthentication();
+
+		if (authentication == null) {
+			return false;
+		}
+
+		java.util.Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+
+		return authorities.contains(new SimpleGrantedAuthority(role));
+	}
 
 }
