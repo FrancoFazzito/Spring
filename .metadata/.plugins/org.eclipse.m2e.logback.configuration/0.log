@@ -7692,3 +7692,100 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2020-01-17 01:04:37,736 [Worker-152: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
 2020-01-17 01:04:37,738 [Worker-152: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-01-17 01:04:37,739 [Worker-152: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-22 23:36:58,632 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-01-22 23:36:59,712 [Worker-5: Decoration Calculation] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+2020-01-22 23:39:48,913 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:39:48,917 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-22 23:39:48,930 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-22 23:39:48,936 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:39:48,936 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-22 23:41:51,645 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:41:51,648 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-22 23:41:51,651 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-22 23:41:51,654 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:41:51,655 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-22 23:47:06,534 [Worker-15: Launching spring-boot-data-jpa-refactor - SpringBootDataJpaRefactorApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:47:06,538 [Worker-15: Launching spring-boot-data-jpa-refactor - SpringBootDataJpaRefactorApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-22 23:47:06,542 [Worker-15: Launching spring-boot-data-jpa-refactor - SpringBootDataJpaRefactorApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-22 23:47:06,547 [Worker-15: Launching spring-boot-data-jpa-refactor - SpringBootDataJpaRefactorApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-22 23:47:06,547 [Worker-15: Launching spring-boot-data-jpa-refactor - SpringBootDataJpaRefactorApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:33:02,299 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:33:02,301 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:33:02,304 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:33:02,306 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:33:02,307 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:40:00,551 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:40:00,552 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:40:00,555 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:40:00,558 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:40:00,558 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:40:35,102 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:40:35,103 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:40:35,106 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:40:35,109 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:40:35,109 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:41:09,080 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:41:09,081 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:41:09,084 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:41:09,087 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:41:09,087 [main] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:44:34,931 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:44:34,932 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:44:34,935 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:44:34,938 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:44:34,938 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:48:16,055 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:48:16,056 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:48:16,058 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:48:16,061 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:48:16,061 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:51:15,286 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:51:15,287 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:51:15,290 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:51:15,293 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:51:15,293 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:51:26,916 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:51:26,917 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:51:26,919 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:51:26,922 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:51:26,922 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:53:53,209 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:53:53,211 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:53:53,213 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:53:53,216 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:53:53,216 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:56:07,005 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:56:07,007 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:56:07,010 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:56:07,014 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:56:07,014 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:56:27,489 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:56:27,490 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:56:27,493 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:56:27,496 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:56:27,496 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 00:57:41,353 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:57:41,355 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 00:57:41,357 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 00:57:41,360 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 00:57:41,360 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 01:07:34,826 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:07:34,827 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 01:07:34,830 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 01:07:34,835 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:07:34,835 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 01:08:47,030 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:08:47,032 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 01:08:47,035 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 01:08:47,040 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:08:47,040 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 01:11:27,925 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:11:27,927 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 01:11:27,929 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 01:11:27,932 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:11:27,932 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
+2020-01-23 01:12:39,102 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:12:39,103 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-01-23 01:12:39,106 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 17 resources
+2020-01-23 01:12:39,113 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-01-23 01:12:39,114 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SPRING\workspace\spring-boot-data-jpa-refactor\src\test\resources
