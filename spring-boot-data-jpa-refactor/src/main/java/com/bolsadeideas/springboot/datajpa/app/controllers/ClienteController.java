@@ -177,22 +177,22 @@ public class ClienteController {
 	}
 
 	// obtener roles
-	private boolean hasRole(String role) {
-		SecurityContext context = SecurityContextHolder.getContext();
-
-		if (context == null) {
-			return false;
-		}
-
-		Authentication authentication = context.getAuthentication();
-
-		if (authentication == null) {
-			return false;
-		}
-
-		java.util.Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
-
-		return authorities.contains(new SimpleGrantedAuthority(role));
-	}
+//	private boolean hasRole(String role) {
+//		SecurityContext context = SecurityContextHolder.getContext();
+//
+//		if (context == null) {
+//			return false;
+//		}
+//
+//		Authentication authentication = context.getAuthentication();
+//
+//		if (authentication == null) {
+//			return false;
+//		}
+//
+//		java.util.Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+//
+//		return authorities.contains(new SimpleGrantedAuthority(role));
+//	}
 
 }

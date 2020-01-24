@@ -26,12 +26,12 @@ public class SpringBootDataJpaRefactorApplication implements CommandLineRunner{
 		fileService.deleteAll();
 		fileService.init();
 		
-		String password ="12345";
-
-		for (int i = 0; i < 2; i++) {
-			String bcryptPass = passwordEncoder.encode(password);
-			System.out.println(bcryptPass);
-		}
+//		String password ="12345";
+//
+//		for (int i = 0; i < 2; i++) {
+//			String bcryptPass = passwordEncoder.encode(password);
+//			System.out.println(bcryptPass);
+//		}
 	}
 
 }
