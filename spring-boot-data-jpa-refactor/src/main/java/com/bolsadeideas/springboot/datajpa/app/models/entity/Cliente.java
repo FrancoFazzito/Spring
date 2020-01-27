@@ -22,6 +22,10 @@ import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "clientes")
 public class Cliente implements Serializable {
@@ -46,9 +50,13 @@ public class Cliente implements Serializable {
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private Date createAt;
 
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "cliente", orphanRemoval = true)
+	//@JsonIgnore //evita loop infinito
+	//mostrar factura en json pero solo en sentido unidireccional
+	@JsonManagedReference //PARTE DELANTERA QUE VEMOS EN EL JSON Y LA BACK SE OMITA DE SERIALIZACION
 	private List<Factura> facturas;
 
 	private String foto;

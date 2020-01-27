@@ -24,6 +24,9 @@ import javax.xml.bind.annotation.XmlTransient;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name = "facturas")
 public class Factura implements Serializable {
@@ -40,6 +43,7 @@ public class Factura implements Serializable {
 	@Temporal(TemporalType.DATE)
 	@Column(name = "create_at")
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private Date createAt;
 
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -86,6 +90,7 @@ public class Factura implements Serializable {
 	}
 
 	@XmlTransient //evita loop infinito
+	@JsonBackReference
 	public Cliente getCliente() {
 		return cliente;
 	}

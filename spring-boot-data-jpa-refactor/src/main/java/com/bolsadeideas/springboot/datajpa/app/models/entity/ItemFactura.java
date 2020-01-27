@@ -11,6 +11,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name = "facturas_items")
 public class ItemFactura implements Serializable {
@@ -22,8 +24,10 @@ public class ItemFactura implements Serializable {
 	private Long id;
 	private Integer cantidad;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER) //TRAE TODOS LOS PRODUCTOS CUANDO HAY UNA COMPOSICION
 	@JoinColumn(name = "producto_id")
+	//QUEREMOS IGNORAR CIERTA PROPIEDAD
+	@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 	private Producto producto;
 
 	public Integer getCantidad() {

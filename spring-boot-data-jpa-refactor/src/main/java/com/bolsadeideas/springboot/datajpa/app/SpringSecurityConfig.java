@@ -29,8 +29,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private JpaUserDetailsService userDetailsService;
 	
-	@Autowired
-	private DataSource datasource;
+//	@Autowired
+//	private DataSource datasource;
 	
 	@Autowired //para que sea inyectado
 	public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception {
