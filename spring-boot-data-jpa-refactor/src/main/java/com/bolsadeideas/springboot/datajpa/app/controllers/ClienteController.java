@@ -2,6 +2,7 @@ package com.bolsadeideas.springboot.datajpa.app.controllers;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -28,6 +29,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
@@ -37,6 +39,7 @@ import com.bolsadeideas.springboot.datajpa.app.models.entity.Cliente;
 import com.bolsadeideas.springboot.datajpa.app.models.service.IUploadFileService;
 import com.bolsadeideas.springboot.datajpa.app.models.service.IclienteService;
 import com.bolsadeideas.springboot.datajpa.app.util.paginator.PageRender;
+import com.bolsadeideas.springboot.datajpa.app.view.xml.ClienteList;
 
 @Controller
 @SessionAttributes("cliente")
@@ -49,6 +52,16 @@ public class ClienteController {
 	@Qualifier("clienteService")
 	private IclienteService clienteService;
 
+	@GetMapping({"/api/listar"})
+	public @ResponseBody List<Cliente> listarRest(){
+		return clienteService.findAll();
+	}
+	
+	@GetMapping({"/api/listar-XML"})
+	public @ResponseBody ClienteList listarRestXML(){
+		return new ClienteList(clienteService.findAll());
+	}
+	
 	@GetMapping({ "/listar", "/", "" })
 	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model model,
 			Authentication authentication, HttpServletRequest request) {

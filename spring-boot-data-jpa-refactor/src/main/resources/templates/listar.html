@@ -12,6 +12,8 @@
 				<h4 class="card-title">
 					<a class="btn btn-outline-success btn-xs float right" th:href="@{'/listar'(format=xml)}">XML</a>
 					<a class="btn btn-outline-success btn-xs float right" th:href="@{'/listar'(format=json)}">JSON</a>
+					<a class="btn btn-outline-success btn-xs float right" th:href="@{'api/listar'}">rest JSON</a>
+					<a class="btn btn-outline-success btn-xs float right" th:href="@{'api/listar-XML'}">rest XML</a>
 				</h4>
 				<table class="table table-striped">
 					<thead>
